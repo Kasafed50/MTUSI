@@ -1,0 +1,94 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+	user-select: none;
+}
+
+body
+{
+	background-color: #343434;
+}
+
+#input-output-section
+{
+	width: 600px;
+	height: 100vh;
+	display: flex;
+	justify-content: space-evenly;
+	flex: 300 1 row;
+	margin: 0 auto;
+	align-items: center;
+	background-color: #343434;
+}
+
+input, select, option, button
+{
+	background: #f0f0f0;
+	text-align: center;
+	border-width: 1px;
+	border-color: #000;
+	margin-bottom: 2px;
+	font-size: 1.1em;
+	border-radius: 3px;
+}
+#Text-t
+{
+	color: #FFF;
+	position: relative;
+	top: -100px;
+	right: -180px;
+	font-size:30px
+}
+
+#input-user-text
+{
+	width: 235px;
+	height: 48px;
+	border-radius: 3px;
+	padding-left: 3px;
+	position: relative;
+	top: -25px;
+
+}
+
+#select-lang-from
+{
+	width: 240px;
+	height: 25px;
+	border-radius: 3px;
+	padding-left: 3px;
+	position: relative;
+	top: -104px;
+}
+
+#select-lang-to
+{
+	width: 240px;
+	height: 25px;
+	border-radius: 3px;
+	padding-left: 3px;
+	position: relative;
+	top: -131px;
+	right: -280px;
+}
+
+#output-translated-text
+{
+	width: 235px;
+	height: 48px;
+	border-radius: 3px;
+	padding-left: 3px;
+	position: relative;
+	top: -60px;
+}
+#translate
+{
+	width: 240px;
+	height: 50px;
+	border-radius: 3px;
+	position: relative;
+	top: -60px;
+	right: -140px;
+}

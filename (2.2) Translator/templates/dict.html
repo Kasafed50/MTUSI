@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/static/snp-stylesheets.css">
+    </head>
+    <body>
+        <section id="input-output-section">
+            <div id="input-section">
+                <div ID="Text-t">
+                    Translator
+                </div>
+                <form action="/translate" method="post" id="form">
+                    <div>
+                        <input id="input-user-text" type="text" name="word" autocomplete="off" placeholder="Введите ваше слово">
+                    </div>
+                    <div>
+                        <select name="from" required id="select-lang-from">
+                            <option value="none" disabled selected>Выберете язык слова</option>
+                            <option value="ru">Русский</option>
+                            <option value="en">Английский</option>
+                            <option value="de">Немецкий</option>
+                        </select>
+                    </div>
+                    <div>
+                         <select name="to" required id="select-lang-to">
+                            <option value="none" disabled selected>Выберете язык перевода</option>
+                            <option value="ru">Русский</option>
+                            <option value="en">Английский</option>
+                            <option value="de">Немецкий</option>
+                        </select>
+                     </div>
+                    <div>
+                        <button id="translate" type="submit" formmethod="post">Перевести</button>
+                    </div>
+                </form>
+            </div>
+            <div id="output-section">
+                <input disabled type="text" name="output" id="output-translated-text" placeholder="Тут будет перевод">
+            </div>
+        </section>
+    </body>
+</html>
