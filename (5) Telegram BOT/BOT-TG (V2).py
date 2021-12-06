@@ -1,5 +1,6 @@
 import random
 import time
+
 import telebot
 from telebot import types
 
@@ -66,12 +67,31 @@ def start(message):
 
 @bot.message_handler(commands=['help'])
 def start_message(message):
-    bot.send_message(message.chat.id, 'Я умею...')
+    bot.send_message(message.chat.id,
+                     'Ну хорошо, расскажу о себе.\nЯ могу немного поговорить с тобой, а затем сиыграть в рандомное '
+                     'число. Я дам тебе ссылку на крус валюты, сайт твоего вуза, гитхаб автора и стим. У меня есть '
+                     'пара команд:\n/game - откроет Стим\n/github - Откроет гит автора\n/mlink - Даст ссылку на кабинет'
+                     ' МТУСИ\n/help - Помощь \n/start - Запуск')
     andnow(message)
 
-@bot.message_handler(commands=['getmy'])
+
+@bot.message_handler(commands=['mlink'])
 def start_message(message):
-    bot.send_message(message.chat.id, 'Я умею...')
+    bot.send_message(message.chat.id,
+                     'Все важные ссылки МТУСИ.\nСайт: https://mtuci.ru/\nКабинет: '
+                     'https://lms.mtuci.ru/lms/login/index.php\nА это то самое: https://vk.com/id563507318')
+    andnow(message)
+
+
+@bot.message_handler(commands=['github'])
+def start_message(message):
+    bot.send_message(message.chat.id, 'Посмотри тут:\nhttps://github.com/Kasafed50')
+    andnow(message)
+
+
+@bot.message_handler(commands=['game'])
+def start_message(message):
+    bot.send_message(message.chat.id, 'Посмотри тут:\nhttps://store.steampowered.com/?l=russian')
     andnow(message)
 
 
